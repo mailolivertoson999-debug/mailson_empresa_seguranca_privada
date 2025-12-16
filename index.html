@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Segurity Oliver - A Empresa que Garante a sua Segurança</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,11 +16,15 @@
         <div class="container grid-topo">
         <h1><a href="index.html"><img src="imagens/logo.com.borda.png"></a></h1>
         <nav id="menu-topo">
+            <label id="botao"  for="chk-menu">
+                <img src="imagens/menu-aberto.png">
+            </label>
+            <input type="checkbox" id="chk-menu">
             <ul>
                 <li><a href="index.html" class="atual">HOME</a> </li>
                 <li><a href="sobrenos.html">SOBRE NÓS</a> </li>
                 <li><a href="nossasolucoes.html">NOSSAS SOLUÇÕES</a> </li>
-                <li><a href="">CONTATO</a> </li>
+                <li><a href="contato.html">CONTATO</a> </li>
             </ul></nav>
 
         <h2>Temos como objetivo garantir a sua <span class="texto-amarelo">segurança</span> </h2>
@@ -100,21 +106,32 @@
         <section id="sobrenos">
             <div class="container grid-sobrenos">
                 <h3>SOBRE NÓS</h3>
-                <p id="pri"><br>Bem-vindos à Security Oliver, uma empresa dedicada a oferecer soluções de segurança privada de excelência, protegendo o que é mais valioso para você: sua tranquilidade, seus bens e seus entes queridos. Fundada com a visão de redefinir os padrões de segurança no mercado, a Security Oliver é sinônimo de confiança, inovação e compromisso inabalável.<br>
-                Nossa Jornada:
+                <div class="sobrenosimg">
+                   <div>
+                    <p><br>Bem-vindos à Security Oliver, uma empresa dedicada a oferecer soluções de segurança privada de excelência, protegendo o que é mais valioso para você: sua tranquilidade, seus bens e seus entes queridos. Fundada com a visão de redefinir os padrões de segurança no mercado, a Security Oliver é sinônimo de confiança, inovação e compromisso inabalável.</p>
+                <h4>Nossa Jornada:</h4>
+                <p>
                 A Security Oliver nasceu da percepção da crescente necessidade de serviços de segurança que não apenas reagem a ameaças, mas que as previnem com inteligência e estratégia. Desde o nosso início, estabelecemos um compromisso inegociável com a excelência, construindo uma equipe de profissionais altamente treinados e experientes, dedicados a superar as expectativas de nossos clientes. Cada membro da nossa equipe é cuidadosamente selecionado e recebe treinamento contínuo, garantindo que estejam sempre preparados para os desafios mais complexos, operando com discrição, eficiência e total profissionalismo.<br>
                 Nossa Filosofia:
-                Acreditamos que a segurança é um direito fundamental e que cada cliente merece um plano de proteção personalizado. Por isso, na Security Oliver, não oferecemos soluções genéricas. Mergulhamos nas particularidades de cada situação, compreendendo as necessidades específicas de nossos clientes para desenvolver estratégias de segurança sob medida. Seja para proteção patrimonial, segurança pessoal, eventos ou consultoria especializada, nossa abordagem é sempre proativa, tecnológica e humana.</br><br><br><br><p>
-                <p id="seg"><strong>Nossa Sede: Onde a Excelência em Segurança Reside</strong><br>
-                A sede da Security Oliver está estrategicamente localizada em um ponto de fácil acesso na cidade, refletindo nosso compromisso com a conveniência e o profissionalismo. Nosso edifício, com um design moderno e imponente, não apenas se destaca pela beleza externa com sua fachada de vidro, mas também oferece um ambiente interno que é um modelo de funcionalidade, tecnologia e segurança. Cada espaço foi cuidadosamente planejado para inspirar confiança, promover a inovação e garantir a máxima proteção, utilizando os mais avançados sistemas de segurança. Convidamos você a conhecer nossa estrutura que une estética e tecnologia para apoiar nossa missão de proteger seu mundo.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <div id="ii"><a href="sobrenos.html" class="bt-solid-amar">SAIBA MAIS</a></p></div>
-                <img src="imagens/nos.empresa.png">
+                Acreditamos que a segurança é um direito fundamental e que cada cliente merece um plano de proteção personalizado. Por isso, na Security Oliver, não oferecemos soluções genéricas. Mergulhamos nas particularidades de cada situação, compreendendo as necessidades específicas de nossos clientes para desenvolver estratégias de segurança sob medida. Seja para proteção patrimonial, segurança pessoal, eventos ou consultoria especializada, nossa abordagem é sempre proativa, tecnológica e humana.<p>
+                
+                    <h4>Nossa Sede: Onde a Excelência em Segurança Reside</h4>
+                    <p>  
+                    A sede da Security Oliver está estrategicamente localizada em um ponto de fácil acesso na cidade, refletindo nosso compromisso com a conveniência e o profissionalismo. Nosso edifício, com um design moderno e imponente, não apenas se destaca pela beleza externa com sua fachada de vidro, mas também oferece um ambiente interno que é um modelo de funcionalidade, tecnologia e segurança. Cada espaço foi cuidadosamente planejado para inspirar confiança, promover a inovação e garantir a máxima proteção, utilizando os mais avançados sistemas de segurança. Convidamos você a conhecer nossa estrutura que une estética e tecnologia para apoiar nossa missão de proteger seu mundo.
+                    </p>
+                    </div>
+                    <img src="imagens/nos.empresa.png" alt="Imagem sobre nós">
+                
+        </div>
+                
+                <div id="ii"><a href="sobrenos.html" class="bt-solid-amar">SAIBA MAIS</a></div>
+                
             </div>
         </section>
     </main>
     <footer id="rodape">
         <div class="container grid-rodape">
-            <h1><a href="index.html"><img src="imagens/logo.com.borda.png"></a></h1>
+            <h1><a href="index.html"><img id="rod" src="imagens/logo.com.borda.png"></a></h1>
             <div id="redes">
                 <a href=""><img src="imagens/ico.whatsapp.png"></a>
                 <a href=""><img src="imagens/ico.instagram.png"></a>

@@ -14,6 +14,11 @@
     --font-titulo: "Geologica", sans-serif;
     --font-texto: "Inter", sans-serif;
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
 body{
     font-family: var(--font-texto);
 }
@@ -29,13 +34,23 @@ body{
 }
 .grid-topo{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 2fr 1fr; 
 }
 #menu-topo{
-    grid-column: 2/5;
+    grid-column: 2/4;
+}
+
+#chk-menu{
+    display: none;
+}
+#botao{
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    margin-right: auto;
 }
 .grid-topo > h2{
-    grid-column: 1/4;
+    grid-column: 1/3;
     align-self: center;
     font-family: var(--font-titulo);
     font-size: 5rem;
@@ -187,15 +202,15 @@ body{
 }
 
 #sobrenos{
-    min-height: 1500px;
+    min-height: 1150px;
     background-color: var(--Cinza);
     padding: 20px 10px;
-
+    display: flex;
+    justify-content: space-around;
 }
 
 .grid-sobrenos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 #sobrenos h3{
@@ -207,31 +222,36 @@ body{
     padding-bottom: 3px;
     margin: 60px 0;
     margin-bottom: 0;
-    grid-column: 1/4;
 }
-
-#sobrenos img{
-    grid-row: 5/9;
-    grid-column: 2/4;
-    width: 49.6rem;
-}
-
-#sobrenos #pri{
-    grid-row: 2/5;
-    grid-column: 1/4;
-    font-size: 1.13rem;
-    color: var(--Branco);
-}
-
 #sobrenos #seg{
-    grid-row: 5/9;
-    grid-column: 1/2;
+    font-size: 1.13rem;
+    color: var(--Branco);
+    justify-content: left;
+    
+}
+#sobrenos img{
+    width: 35rem;
+    padding-left: 10px;
+}
+#sobrenos p{
     font-size: 1.13rem;
     color: var(--Branco);
 }
+#sobrenos h4{
+    font-size: 1.3rem;
+    color: var(--Branco);
+    margin:15px 0;
+}
+.sobrenosimg{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin:20px 0;
+}
+
+
 #ii{
-    bottom: 0;
     text-align: center;
+    margin-top: 40px;
 }
 .bt-solid-amar{
     background-color: var(--Amarelo);
@@ -342,4 +362,167 @@ body{
     margin: 5px 20px;
     float: left;
     
+}
+
+
+@media screen and (max-width: 1025px){
+    .container{
+    max-width: 900px;
+    margin: 0 auto;
+    }
+    .nossas-solucoes img{
+        width: 200px;
+    }
+    .nossas-solucoes h4 > a{
+        font-size: 1.5rem;
+    }
+    .grid-topo > h2{
+        font-size: 4rem;
+    }
+    .grid-topo > h1 img{
+        width: 300px;
+    }
+    #menu-topo a{
+        padding-left: 15px;
+        font-size: 1.2rem;
+        font-family: var(--font-titulo);
+    }
+    .grid-topo > img{
+        width: 270px;
+    }
+    #sobrenos img{
+        width: 25rem;
+    }
+    #info .icones{
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    #info h3{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 769px){
+    #sobrenos #pri{
+        font-size: 1rem;
+    }
+    #sobrenos #seg{
+        font-size: 1rem;
+    }
+    #menu-topo li > a{
+        font-size: 1rem;
+        padding: 5px;
+    }
+    #ali{
+        padding-left: 7px;
+    }
+    .sobrenosimg{
+        grid-template-columns: 1fr;
+    }
+    .sobrenosimg > img{
+        padding-left: 300px;
+    }
+    .sobrenosimg > div{
+        padding-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 426px){
+
+    .grid-topo{
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+#menu-topo{
+    grid-column: auto;
+    grid-row:1/2;
+}
+#menu-topo > ul{
+        flex-direction: column;
+        justify-content: start;
+        gap:20px;
+        height:1px;
+        overflow: hidden;
+    }
+    #menu-topo li{
+        padding: 3px auto; /* valor 1 - em cima e embaixo*/
+        margin: 2px auto;
+        width: 100%;
+        text-align: center;
+    }
+
+#botao{
+    display: block;
+}
+
+#chk-menu:checked ~  ul{
+    height: 200px;
+    overflow: visible;
+}
+
+
+.grid-topo > h2{
+    grid-column: auto;
+    align-self: center;
+    font-family: var(--font-titulo);
+    font-weight: 900;
+    text-align: center;
+    color: var(--Branco);
+    line-height: 100%;
+    text-shadow: 13px 13px 10px #00000025;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.grid-topo a > img{
+    padding-bottom: 20px;
+    width: 350px;
+    padding-left: 4.5rem;
+}
+.grid-topo > img{
+    padding-left: 110px;
+    width: 300px;
+}
+#info h3{
+    width: 300px;
+    font-size: 2rem;
+    padding: 10px;
+} 
+.icones article{
+    width: 350px;
+    padding: 20px;
+}
+
+#info .icones{
+    grid-template-columns: 1fr;
+}
+    
+    .nossas-solucoes{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .nossas-solucoes img{
+        width:100px;
+    }
+    .sobrenosimg{
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+    #ii{
+        padding-bottom: 20px;
+    }
+    
+    #rodape{
+    background-image: url(imagens/icone.final.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px;
+    }
+    .grid-rodape{
+        grid-template-columns: 1fr;
+    }
+    .grid-rodape a > img{
+        padding-top: 20px;
+    }
 }
