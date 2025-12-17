@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segurity Oliver - A Empresa que Garante a sua Segurança</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +16,10 @@
         <div class="container grid-topo">
         <h1><a href="index.html"><img src="imagens/logo.com.borda.png"></a></h1>
         <nav id="menu-topo">
+            <label id="botao"  for="chk-menu">
+                <img src="imagens/menu-aberto.png">
+            </label>
+            <input type="checkbox" id="chk-menu">
             <ul>
                 <li><a href="index.html">HOME</a> </li>
                 <li><a href="sobrenos.html">SOBRE NÓS</a> </li>
@@ -28,17 +33,23 @@
     </div>
     </header>
     <section id="formulario">
+        
         <form action="receber.php" method="post">
-
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" required id="nome">
+                <h3 class="tit">Cadastre-se e entre em Contato Conosco</h3>
+            <label>Nome:
+            <input type="text" name="nome" required id="nome" class="fo"></label>
 
             <label>Email:
-                <input type="email" name="email" required id="email">
+                <input type="email" name="email" required id="email" class="fo">
             </label>
-
+            <label>Senha:
+                <input type="password" name="senha" required id="senha" class="fo"></label>
+            <label>Telefone:
+                <input type="tel" name="telefone" required id="telefone" class="fo"></label>
             <label>Mensagem:
-                <textarea name="mensagem" required id="mensagem"></textarea>
+                <textarea name="mensagem" required placeholder="Digite o que você tem a dizer para nós" id="mensagem" class="fo"></textarea></label>
+
+            
 
             <button type="submit">Enviar</button>
 
